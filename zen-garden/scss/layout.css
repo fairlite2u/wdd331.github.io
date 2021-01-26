@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif&display=swap");
 body {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +22,7 @@ body {
 .intro {
   margin: 0 auto;
   background-color: #F9F8F8;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 3rem 1.5rem 1.5rem 3rem;
   font-family: "IBM Plex Serif", serif;
   font-size: 1rem;
 }
@@ -69,7 +70,7 @@ h2 {
 
 h2 abbr {
   color: #ffffff;
-  font-weight: bold;
+  font-style: bold;
   background: #0062FF;
   padding: 0 .8rem 0 .4rem;
   margin-left: .5rem;
@@ -86,27 +87,26 @@ abbr {
 
 .preamble {
   background: url(mountains400.jpg) no-repeat top center;
-  background-size: contain;
-  padding-top: 40%;
-  margin-left: -50px;
-  margin-right: -15px;
+  padding-top: 123px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 .preamble h3 {
   font-size: 2.5em;
-  padding-right: 30px;
+  padding-right: 10px;
   padding-bottom: 20px;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 20px;
   border-left: 3px solid #0062FF;
 }
 
 .preamble p {
   font-size: 1.7em;
-  padding-right: 30px;
+  padding-right: 10px;
   padding-bottom: 20px;
   margin: 0;
-  padding-left: 30px;
+  padding-left: 20px;
   border-left: 3px solid #0062FF;
 }
 
@@ -150,17 +150,14 @@ abbr {
 .main p {
   font-size: 1.6em;
   padding-bottom: 30px;
-  -webkit-margin-before: 0px;
-          margin-block-start: 0px;
 }
 
 .benefits {
   background: url(building400.jpg) no-repeat top center;
-  background-size: contain;
-  padding-top: 33%;
+  padding-top: 123px;
   margin-top: 20px;
-  margin-left: -50px;
-  margin-right: -45px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 .benefits h3 {
@@ -174,16 +171,14 @@ abbr {
 }
 
 .participation {
-  background: url(jellyfish320.jpg) no-repeat top left;
-  background-size: 80%;
-  padding-top: 45%;
+  background: url(jellyfish320.jpg) no-repeat top center;
+  padding-top: 193px;
   margin-top: 15px;
 }
 
 .requirements {
-  background: url(skyscraper320.jpg) no-repeat top left;
-  background-size: 80%;
-  padding-top: 45%;
+  background: url(skyscraper320.jpg) no-repeat top center;
+  padding-top: 193px;
   margin-top: 15px;
 }
 
@@ -220,18 +215,17 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-left: -40px;
   padding: 15px 0 15px 50px;
-  max-width: 1440px;
   bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  width: 325px;
 }
 
 .main footer a:link {
   color: #ffffff;
   font-size: 1.6em;
   text-decoration: none;
+  margin-left: -40px;
 }
 
 .main footer a:hover {
@@ -246,42 +240,13 @@ footer {
   color: #CCE0FF;
 }
 
-.preamble {
-  -webkit-animation: fadeIn 5s;
-          animation: fadeIn 5s;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-a.designer-name::after {
-  content: url(external-link.svg);
-  padding-left: 3px;
-}
-
 @media only screen and (min-width: 48em) {
   .intro, .main, .sidebar {
     max-width: 1440px;
   }
   .preamble {
     background: url(mountains1440.jpg) no-repeat top center;
-    background-size: contain;
-    padding-top: 35%;
+    padding-top: 426px;
     margin-top: 20px;
     margin-left: -60px;
     margin-right: -60px;
@@ -296,8 +261,7 @@ a.designer-name::after {
   }
   .benefits {
     background: url(building1440.jpg) no-repeat top center;
-    background-size: contain;
-    padding-top: 32%;
+    padding-top: 426px;
     margin-top: 20px;
     margin-left: -60px;
     margin-right: -60px;
@@ -307,7 +271,7 @@ a.designer-name::after {
             column-gap: 24px;
   }
   .benefits p {
-    padding-bottom: 80px;
+    padding-bottom: 160px;
     margin-left: 60px;
     margin-right: 60px;
   }
@@ -318,9 +282,8 @@ a.designer-name::after {
             column-span: all;
   }
   .participation {
-    background: url(jellyfish1320.jpg) no-repeat top left;
-    background-size: 75%;
-    padding-top: 45%;
+    background: url(jellyfish1320.jpg) no-repeat top center;
+    padding-top: 773px;
     margin-top: 20px;
     -webkit-column-count: 2;
             column-count: 2;
@@ -332,9 +295,8 @@ a.designer-name::after {
             column-span: all;
   }
   .requirements {
-    background: url(skyscraper1320.jpg) no-repeat top left;
-    background-size: 75%;
-    padding-top: 45%;
+    background: url(skyscraper1320.jpg) no-repeat top center;
+    padding-top: 773px;
     margin-top: 20px;
     -webkit-column-count: 2;
             column-count: 2;
@@ -354,8 +316,8 @@ a.designer-name::after {
   .explanation {
     -webkit-column-count: 2;
             column-count: 2;
-    -webkit-column-gap: 23px;
-            column-gap: 23px;
+    -webkit-column-gap: 24px;
+            column-gap: 24px;
   }
   .explanation h3 {
     -webkit-column-span: all;
@@ -373,6 +335,10 @@ a.designer-name::after {
   .sidebar {
     padding-left: 60px;
     padding-right: 60px;
+  }
+  .main footer {
+    margin-left: -60px;
+    width: 1510px;
   }
 }
 /*# sourceMappingURL=layout.css.map */
